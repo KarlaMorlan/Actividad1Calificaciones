@@ -43,33 +43,40 @@ public class Metodos {
         }
         
         //Asignar nota segun el promedio final
-        public float notaFinal() {
-        
+        public char notaFinal() {
+            char nota = ' ';
+            
             if ((promedio>=91) && (promedio<=100))
             {
+               nota = 'A';
                System.out.println("Calificación: A");
             }
             else if ((promedio>=81) && (promedio<=90))
             {
+                nota = 'B';
                 System.out.println("Calificación: B");
             }
             else if ((promedio>=71) && (promedio<=80))
             {
+                nota = 'C';
                 System.out.println("Calificación: C");
             }
             else if ((promedio>=61) && (promedio<=70))
             {
+                nota = 'D';
                 System.out.println("Calificación: D");
             }
             else if ((promedio>=51) && (promedio<=60))
             {
+                nota = 'E';
                 System.out.println("Calificación: E");
             }
             else if (promedio<=50)
             {
+                nota = 'F';
                 System.out.println("Calificación: F");
             }
-            return promedio;
+            return nota;
           
         }
         
